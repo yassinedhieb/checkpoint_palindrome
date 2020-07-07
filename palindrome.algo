@@ -1,0 +1,25 @@
+FUNCTION palindrome(str:STRING, j,n: INTEGER) : BOOLEAN
+VAR
+
+BEGIN
+    IF (n<=1) THEN
+        RETURN TRUE;
+    ELSE_IF (str[j]<>str(n)) THEN
+        RETURN FALSE;
+    ELSE
+        RETURN palindrome(str,j+1,n-1)
+    END_IF
+
+END
+ALGORITHM algorithm_name
+VAR
+    str:STRING,
+    n:INTEGER:=str.length,
+    j:INTEGER:=0,
+BEGIN
+    IF (palindrome) THEN
+        write("str is a palindrome")
+    ELSE
+        write("str is not a palindrome")
+    END_IF
+END
