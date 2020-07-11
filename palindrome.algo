@@ -14,10 +14,10 @@ END
 ALGORITHM algorithm_name
 VAR
     str:STRING,
-    n:INTEGER:=str.length,
+    n:INTEGER:=str.length-1,
     j:INTEGER:=0,
 BEGIN
-    IF (palindrome) THEN
+    IF (palindrome(str,j,n)) THEN
         write("str is a palindrome")
     ELSE
         write("str is not a palindrome")
